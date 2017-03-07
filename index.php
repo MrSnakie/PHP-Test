@@ -43,6 +43,9 @@
 
 				// EXO 7
 				echo $PRENOM." ".$NOM." tu as ".$AGE." ans. <br />";
+
+				// EXO 8
+				echo $calcul1 ." ". $calcul2 ." ". $calcul3;
 			?>
 		</p>
 	</container>

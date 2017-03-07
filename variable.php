@@ -21,8 +21,13 @@
 	// EXO 6
 	$nomm = "Jean-Claude Bernard";
 
-	//EXO 7
+	// EXO 7
 	$NOM = "L'Éponge";
 	$PRENOM = "Bob";
 	$AGE = 5;
+
+	// EXO 8
+	$calcul1 = 3+4;
+	$calcul2 = 5*20;
+	$calcul3 = 45/5;
 ?>
