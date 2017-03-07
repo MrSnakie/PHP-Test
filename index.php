@@ -48,6 +48,14 @@
 				echo $calcul1 ." ". $calcul2 ." ". $calcul3;
 			?>
 		</p>
+
+		<p>
+			<a href="conditions.php">Conditions PHP</a>
+		</p>
+
+		<?php
+			include 'conditions.php'
+		?>
 	</container>
 </body>
 </html>
