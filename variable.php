@@ -11,4 +11,7 @@
 	$ma_string = "Une variable string.";
 	$ma_boolean = true;
 	$ma_float = 2.78;
+
+	// EXO 5
+	$entier = NULL;
 ?>

@@ -23,6 +23,9 @@
 			echo $ma_string.'<br />';
 			echo $ma_boolean.'<br />';
 			echo $ma_float.'<br />';
+
+			echo $entier.'<br />';
+			echo ($entier = 999).'<br />';
 		?>
 	</container>
 </body>
