@@ -1,4 +1,7 @@
 <?php
+	// EXO 1
+	$inutile = 'Bonjour,';
+
 	// EXO 2
 	$nom = "Bariller";
 	$prenom = "Stéphane";
