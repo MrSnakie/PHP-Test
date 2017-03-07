@@ -1,5 +1,7 @@
 <?php
-	$exercice1 = "test";
+	$nom = "Bariller";
+	$prenom = "Stéphane";
+	$age = "20 ans";
 
-	echo $exercice1;
+	$km = "1";
 ?>
