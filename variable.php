@@ -16,7 +16,7 @@
 	$ma_float = 2.78;
 
 	// EXO 5
-	$entier = NULL;
+	$entier = (int)NULL;
 
 	// EXO 6
 	$nomm = "Jean-Claude Bernard";
