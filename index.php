@@ -37,6 +37,9 @@
 				// EXO 5
 				echo $entier.'<br />';
 				echo ($entier = 999).'<br />';
+
+				// EXO 6
+				echo "Bonjour, ".$nom.", comment vas tu ?";
 			?>
 		</p>
 	</container>

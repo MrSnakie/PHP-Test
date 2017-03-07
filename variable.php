@@ -17,4 +17,7 @@
 
 	// EXO 5
 	$entier = NULL;
+
+	// EXO 6
+	$nom = "Jean-Claude Bernard";
 ?>
