@@ -59,9 +59,16 @@
 
 				// EXO 9
 				if($age >= 18){
-					echo "Vous êtes majeurs.";
+					echo "Vous êtes majeurs. <br />";
 				}else{
-					echo "Vous êtes mineurs.";
+					echo "Vous êtes mineurs. <br />";
+				}
+
+				// EXO 10
+				if($iseasy == true){
+					echo "C'est facile ! <br />";
+				}else{
+					echo "C'est difficile ! <br />";
 				}
 			?>
 		</p>
