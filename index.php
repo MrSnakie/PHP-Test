@@ -53,9 +53,18 @@
 			<a href="conditions.php">Conditions PHP</a>
 		</p>
 
-		<?php
-			include 'conditions.php'
-		?>
+		<p>
+			<?php
+				include 'conditions.php';
+
+				// EXO 9
+				if($age >= 18){
+					echo "Vous êtes majeurs.";
+				}else{
+					echo "Vous êtes mineurs.";
+				}
+			?>
+		</p>
 	</container>
 </body>
 </html>
