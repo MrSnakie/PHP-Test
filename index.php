@@ -70,6 +70,19 @@
 				}else{
 					echo "C'est difficile ! <br />";
 				}
+
+				// EXO 11
+				$age = 37;
+				$genre = "Femme";
+				if($age >= 18 && $genre == 'Homme'){
+					echo "Vous êtes un homme et vous êtes majeurs.";
+				}else if($age >= 18 && $genre == 'Femme'){
+					echo "Vous êtes une femme et vous êtes majeurs.";
+				}else if($age <= 18 && $genre == 'Homme'){
+					echo "Vous êtes un homme et vous êtes mineurs.";
+				}else if($age <= 18 && $genre == 'Femme'){
+					echo "Vous êtes une femme et vous êtes mineurs.";
+				}
 			?>
 		</p>
 	</container>

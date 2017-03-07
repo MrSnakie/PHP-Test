@@ -4,4 +4,8 @@
 
 	// EXO 10
 	$iseasy = true;
+
+	// EXO 11
+	$age;
+	$genre = ['Homme','Femme'];
 ?>
