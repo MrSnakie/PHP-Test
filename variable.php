@@ -19,5 +19,10 @@
 	$entier = NULL;
 
 	// EXO 6
-	$nom = "Jean-Claude Bernard";
+	$nomm = "Jean-Claude Bernard";
+
+	//EXO 7
+	$NOM = "L'Éponge";
+	$PRENOM = "Bob";
+	$AGE = 5;
 ?>

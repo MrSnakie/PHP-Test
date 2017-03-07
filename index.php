@@ -39,7 +39,10 @@
 				echo ($entier = 999).'<br />';
 
 				// EXO 6
-				echo "Bonjour, ".$nom.", comment vas tu ?";
+				echo "Bonjour, ".$nomm.", comment vas tu ? <br />";
+
+				// EXO 7
+				echo $PRENOM." ".$NOM." tu as ".$AGE." ans. <br />";
 			?>
 		</p>
 	</container>
