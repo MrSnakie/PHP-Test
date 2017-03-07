@@ -4,3 +4,14 @@ html, body{
 	background: $bg;
 	font-family: Arial, sans-serif;
 }
+
+container{
+	text-align: center;
+	a{
+		background: white;
+		padding: 10px;
+		border-radius: 5px;
+		text-decoration: none;
+		color: lime;
+	}
+}
