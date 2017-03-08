@@ -227,7 +227,11 @@
 				include 'tableau.php';
 
 				// EXO 30
-				print_r($moi)."</br>";
+				print_r($moi);
+				echo "</br>";
+
+				// EXO 31
+				echo $moi[3];
 			?>
 		</p>
 	</container>
