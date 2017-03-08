@@ -29,4 +29,9 @@
 	function nb_string($nb, $STRING){
 		return $nb ." ". $STRING ."</br>";
 	}
+
+	// EXO 27
+	function info($nom, $prenom, $age){
+		return "Bonjour, ". $nom ." ". $prenom .", tu as ". $age ." ans.</br>";
+	}
 ?>
