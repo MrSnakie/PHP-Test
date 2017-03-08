@@ -34,4 +34,17 @@
 	function info($nom, $prenom, $age){
 		return "Bonjour, ". $nom ." ". $prenom .", tu as ". $age ." ans.</br>";
 	}
+
+	// EXO 28
+	function majorite($age, $genre){
+		if($age >= 18 && $genre == 'Homme'){
+			return "Vous êtes un homme et vous êtes majeurs. </br>";
+		}else if($age >= 18 && $genre == 'Femme'){
+			return "Vous êtes une femme et vous êtes majeurs. </br>";
+		}else if($age <= 18 && $genre == 'Homme'){
+			return "Vous êtes un homme et vous êtes mineurs. </br>";
+		}else if($age <= 18 && $genre == 'Femme'){
+			return "Vous êtes une femme et vous êtes mineurs. </br>";
+		}
+	}
 ?>

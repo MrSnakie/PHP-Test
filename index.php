@@ -209,6 +209,9 @@
 
 				// EXO 27
 				echo info('BARILLER', 'Stéphane', 20);
+
+				// EXO 28
+				echo majorite(20, 'Homme');
 			?>
 		</p>
 	</container>
