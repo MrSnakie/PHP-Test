@@ -121,6 +121,16 @@
 				}
 			?>
 		</p>
+
+		<p>
+			<a href="boucle.php">Boucle PHP</a>
+		</p>
+
+		<p>
+		<?php
+			include 'boucle.php';
+		?>
+		</p>
 	</container>
 </body>
 </html>
