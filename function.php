@@ -47,4 +47,9 @@
 			return "Vous êtes une femme et vous êtes mineurs. </br>";
 		}
 	}
+
+	// EXO 29
+	function somme($NB1 = 3, $NB2 = 4, $NB3 = 5){
+		return ($NB1+$NB2+$NB3)."</br>";
+	}
 ?>

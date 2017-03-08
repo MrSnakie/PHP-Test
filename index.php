@@ -212,6 +212,9 @@
 
 				// EXO 28
 				echo majorite(20, 'Homme');
+
+				// EXO 29
+				echo somme(45, 9, 2);
 			?>
 		</p>
 	</container>
