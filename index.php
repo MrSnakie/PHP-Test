@@ -242,6 +242,9 @@
 				// EXO 34
 				print_r($haut_de_france);
 				echo "</br>";
+
+				// EXO 35
+				echo $haut_de_france[59]."</br>";
 			?>
 		</p>
 	</container>

@@ -18,5 +18,8 @@
 		60 => "Oise",
 		62 => "Pas-de-Calais",
 		80 => "Somme"
-		]
+	];
+
+	// EXO 35
+		// voir index.php
 ?>
