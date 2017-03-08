@@ -231,7 +231,7 @@
 				echo "</br>";
 
 				// EXO 31
-				echo $moi[3];
+				echo $moi[3-1];
 			?>
 		</p>
 	</container>
