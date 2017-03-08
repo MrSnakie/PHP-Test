@@ -11,8 +11,8 @@
 		<p>
 			<h1>Formulaire n°1</h1>
 			<form action="include/user.php" method="GET">
-				Prénom: <input type="text" name="nom1">
-				Nom: <input type="text" name="prenom1">
+				Prénom: <input type="text" name="nom1" required>
+				Nom: <input type="text" name="prenom1" required>
 				<input type="submit" value="Envoyer">
 			</form>
 		</p>
@@ -22,8 +22,8 @@
 		<p>
 			<h1>Formulaire n°2</h1>
 			<form action="include/user.php" method="POST">
-				Prénom: <input type="text" name="nom2">
-				Nom: <input type="text" name="prenom2">
+				Prénom: <input type="text" name="nom2" required>
+				Nom: <input type="text" name="prenom2" required>
 				<input type="submit" value="Envoyer">
 			</form>
 		</p>
@@ -32,15 +32,24 @@
 
 		<p>
 			<h1>Formulaire n°3</h1>
-			<form action="formulaire.php" method="GET">
-				Civilité: <select name="civilite">
-					<option value="mr">Mr</option>
-					<option value="mme">Mme</option>
-				</select>
-				Nom: <input type="text" name="nom">
-				Prénom: <input type="text" name="prenom">
-				<input type="submit" value="Envoyer">
-			</form>
+			<?php
+				if(isset($_GET['civilite'], $_GET['nom'], $_GET['prenom'])){
+					echo "<p>".htmlspecialchars($_GET['civilite'] ." ". $_GET['nom'] ." ". $_GET['prenom'])."</p>";
+					echo "<p><a href='formulaire.php'>Recommencer</a></p>";
+				}else{
+			?>
+					<form action="formulaire.php" method="GET">
+						Civilité: <select name="civilite" required>
+							<option value="Monsieur">Mr</option>
+							<option value="Madame">Mme</option>
+						</select>
+						Nom: <input type="text" name="nom" required>
+						Prénom: <input type="text" name="prenom" required>
+						<input type="submit" value="Envoyer">
+					</form>
+			<?php
+				}
+			?>
 		</p>
 	</container>
 </body>
