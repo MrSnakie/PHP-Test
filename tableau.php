@@ -10,4 +10,13 @@
 
 	// EXO 33
 	$moi[3] = "Julien";
+
+	// EXO 34
+	$haut_de_france = [
+		2 => "Aisne",
+		59 => "Nord",
+		60 => "Oise",
+		62 => "Pas-de-Calais",
+		80 => "Somme"
+		]
 ?>

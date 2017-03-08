@@ -238,6 +238,10 @@
 
 				// EXO 33
 				echo $moi[3]."</br>";
+
+				// EXO 34
+				print_r($haut_de_france);
+				echo "</br>";
 			?>
 		</p>
 	</container>
