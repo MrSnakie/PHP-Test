@@ -175,6 +175,12 @@
 				echo "On tient le bon bout. ";
 			}
 			echo "</br>";
+
+			// EXO 21
+			for($boucle4; $boucle>=0; $boucle-=12){
+				echo "Enfin !!!! ";
+			}
+			echo "</br>";
 		?>
 		</p>
 	</container>
