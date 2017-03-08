@@ -235,6 +235,9 @@
 
 				// EXO 32
 				echo $moi[5]."</br>";
+
+				// EXO 33
+				echo $moi[3]."</br>";
 			?>
 		</p>
 	</container>
