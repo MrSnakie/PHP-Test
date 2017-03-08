@@ -197,6 +197,9 @@
 
 				// EXO 23
 				echo chaine('Ceci est une chaîne de caractère.');
+
+				// EXO 24
+				echo double_chaine('Ma première phrase.','Ma deuxième phrase.');
 			?>
 		</p>
 	</container>
