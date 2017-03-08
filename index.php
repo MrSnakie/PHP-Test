@@ -192,7 +192,11 @@
 			<?php
 				include 'function.php';
 
-				truetrue()."</br>";
+				// EXO 22
+				truetrue();
+
+				// EXO 23
+				echo chaine('Ceci est une chaîne de caractère.');
 			?>
 		</p>
 	</container>
