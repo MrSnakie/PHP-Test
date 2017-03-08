@@ -10,10 +10,10 @@
 	<container>
 		<p>
 			<?php
-				if(isset($_GET['nom'], $_GET['prenom'])) {
-					echo $_GET['nom'] ." ". $_GET['prenom'];
-				}else if(isset($_POST['nom'], $_POST['prenom'])){
-					echo $_POST['nom'] ." ". $_POST['prenom'];
+				if(isset($_GET['nom1'], $_GET['prenom1'])) {
+					echo htmlspecialchars($_GET['nom1'] ." ". $_GET['prenom1']);
+				}else if(isset($_POST['nom2'], $_POST['prenom2'])){
+					echo htmlspecialchars($_POST['nom2'] ." ". $_POST['prenom2']);
 				}
 			?>
 		</p>
