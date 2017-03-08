@@ -129,6 +129,12 @@
 		<p>
 		<?php
 			include 'boucle.php';
+
+			// EXO 14
+			while($While <= 10){
+				echo $While." ";
+				$While++;
+			}
 		?>
 		</p>
 	</container>
