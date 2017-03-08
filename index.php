@@ -217,6 +217,19 @@
 				echo somme(45, 9, 2);
 			?>
 		</p>
+
+		<p>
+			<a href="tableau.php">Tableau PHP</a>
+		</p>
+
+		<p>
+			<?php
+				include 'tableau.php';
+
+				// EXO 30
+				print_r($moi)."</br>";
+			?>
+		</p>
 	</container>
 </body>
 </html>
