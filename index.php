@@ -183,6 +183,18 @@
 			echo "</br>";
 		?>
 		</p>
+
+		<p>
+			<a href="function.php">Function PHP</a>
+		</p>
+
+		<p>
+			<?php
+				include 'function.php';
+
+				truetrue()."</br>";
+			?>
+		</p>
 	</container>
 </body>
 </html>
