@@ -200,6 +200,9 @@
 
 				// EXO 24
 				echo double_chaine('Ma première phrase.','Ma deuxième phrase.');
+
+				// EXO 25
+				nombres(10, 9);
 			?>
 		</p>
 	</container>
