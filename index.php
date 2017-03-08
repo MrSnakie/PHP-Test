@@ -248,6 +248,12 @@
 
 				// EXO 36
 				echo $haut_de_france[51]."</br>";
+
+				// EXO 37
+				foreach($moi as $key){
+					echo $key." ";
+				}
+				echo "</br>";
 			?>
 		</p>
 	</container>
