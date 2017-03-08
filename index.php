@@ -203,6 +203,9 @@
 
 				// EXO 25
 				nombres(10, 9);
+
+				// EXO 26
+				echo nb_string(15, 'est mon nombre préféré.');
 			?>
 		</p>
 	</container>

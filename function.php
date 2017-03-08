@@ -24,4 +24,9 @@
 			echo "Le premier nombre est plus petit.</br>";
 		}
 	}
+
+	// EXO 26
+	function nb_string($nb, $STRING){
+		return $nb ." ". $STRING ."</br>";
+	}
 ?>
