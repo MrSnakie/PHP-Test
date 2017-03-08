@@ -143,6 +143,13 @@
 				$var1++;
 			}
 			echo "</br>";
+
+			// EXO 16
+			while($v1 >= 10){
+				echo ($v1*$v2)." ";
+				$v1--;
+			}
+			echo "</br>";
 		?>
 		</p>
 	</container>
