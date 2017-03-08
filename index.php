@@ -269,9 +269,8 @@
 			?>
 		</p>
 
-		<p>
-			<a href="parametres.php">Paramètres PHP</a>
-		</p>
+		<p><a href="parametres.php">Paramètres PHP</a></p>
+		<p><a href="formulaire.php">Formulaire PHP</a></p>
 	</container>
 </body>
 </html>
