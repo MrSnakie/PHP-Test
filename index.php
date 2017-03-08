@@ -157,6 +157,12 @@
 				$VARIABLE+=0.5;
 			}
 			echo "</br>";
+
+			// EXO 18
+			for($boucle; $boucle<=15; $boucle++){
+				echo "On y arrive presque. ";
+			}
+			echo "</br>";
 		?>
 		</p>
 	</container>

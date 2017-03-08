@@ -12,4 +12,7 @@
 
 	// EXO 17
 	$VARIABLE = 1;
+
+	// EXO 18
+	$boucle = 1;
 ?>
