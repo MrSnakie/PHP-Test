@@ -4,4 +4,7 @@
 
 	// EXO 31
 		// Voir index.php
+
+	// EXO 32
+		// Voir index.php
 ?>
