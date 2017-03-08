@@ -72,16 +72,45 @@
 				}
 
 				// EXO 11
-				$age = 37;
-				$genre = "Femme";
 				if($age >= 18 && $genre == 'Homme'){
-					echo "Vous êtes un homme et vous êtes majeurs.";
+					echo "Vous êtes un homme et vous êtes majeurs. </br>";
 				}else if($age >= 18 && $genre == 'Femme'){
-					echo "Vous êtes une femme et vous êtes majeurs.";
+					echo "Vous êtes une femme et vous êtes majeurs. </br>";
 				}else if($age <= 18 && $genre == 'Homme'){
-					echo "Vous êtes un homme et vous êtes mineurs.";
+					echo "Vous êtes un homme et vous êtes mineurs. </br>";
 				}else if($age <= 18 && $genre == 'Femme'){
-					echo "Vous êtes une femme et vous êtes mineurs.";
+					echo "Vous êtes une femme et vous êtes mineurs. </br>";
+				}
+
+				// EXO 12
+				switch ($magnitude) {
+					case 1:
+						echo "Micro-séisme impossible à ressentir. </br>";
+						break;
+					case 2:
+						echo "Micro-séisme impossible à ressentir mais enregistrable par les sismomètres. </br>";
+						break;
+					case 3:
+						echo "Ne cause pas de dégats mais commence à pouvoir être légèrement ressenti. </br>";
+						break;
+					case 4:
+						echo "Séisme capable de faire bouger des objets mais ne causant généralement pas de dégats. </br>";
+						break;
+					case 5:
+						echo "Séisme capable d'engendrer des dégats importants sur de vieux bâtiments ou bien des bâtiments présentants des défauts de construction. Peu de dégats sur des bâtiments modernes. </br>";
+						break;
+					case 6:
+						echo "Fort séisme capable d'engendrer des destructions majeures sur une large distance (180 km) autour de l'épicentre. </br>";
+						break;
+					case 7:
+						echo "Séisme capable de destructions majeures à modérées sur une très large zone en fonction de la distance. </br>";
+						break;
+					case 8:
+						echo "Séisme capable de destructions majeures sur une très large zone de plusieurs centaines de kilomètres. </br>";
+						break;
+					case 9:
+						echo "Séisme capable de tout détruire sur une très vaste zone. </br>";
+						break;
 				}
 			?>
 		</p>

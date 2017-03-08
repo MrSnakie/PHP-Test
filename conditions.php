@@ -6,6 +6,9 @@
 	$iseasy = true;
 
 	// EXO 11
-	$age;
-	$genre = ['Homme','Femme'];
+	$age = 37;
+	$genre = "Femme";
+
+	// EXO 12
+	$magnitude = 6;
 ?>
