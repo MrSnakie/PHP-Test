@@ -163,6 +163,12 @@
 				echo "On y arrive presque. ";
 			}
 			echo "</br>";
+
+			// EXO 19
+			for($boucle2; $boucle2>=0; $boucle2--){
+				echo "Presque bon. ";
+			}
+			echo "</br>";
 		?>
 		</p>
 	</container>

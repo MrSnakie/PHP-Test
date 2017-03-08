@@ -15,4 +15,7 @@
 
 	// EXO 18
 	$boucle = 1;
+
+	// EXO 19
+	$boucle2 = 20;
 ?>
