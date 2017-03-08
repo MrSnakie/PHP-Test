@@ -8,11 +8,14 @@
 
 <body>
 	<container>
-		<p><a href="parametres/exo1.php?nom=Nemare&prenom=Jean">Exercice 1</a></p>
-		</br>
 		<p>
-			<a href="parametres/exo2.php?nom=Nemare&prenom=Jean">Exercice 2</a>
-			<a href="parametres/exo2.php?nom=Nemare&prenom=Jean&age=50">Exercice 2 w/ Age</a>
+			<?php
+				if (isset($_GET['nom'], $_GET['prenom'], $_GET['age'])) {
+					echo $_GET['nom'] ." ". $_GET['prenom'] ." ". $_GET['age'];
+				}else{
+					echo "Le paramètres 'age' n'existe pas.";
+				}
+			?>
 		</p>
 	</container>
 </body>
