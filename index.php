@@ -169,6 +169,12 @@
 				echo "Presque bon. ";
 			}
 			echo "</br>";
+
+			// EXO 20
+			for($boucle3; $boucle<=100; $boucle+=15){
+				echo "On tient le bon bout. ";
+			}
+			echo "</br>";
 		?>
 		</p>
 	</container>
