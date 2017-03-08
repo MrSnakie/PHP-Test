@@ -112,6 +112,13 @@
 						echo "Séisme capable de tout détruire sur une très vaste zone. </br>";
 						break;
 				}
+
+				// EXO 13
+				if($maVariable != 'Homme'){
+					echo "C'est une développeuse !!! </br>";
+				}else{
+					echo "C'est une développeur !!! </br>";
+				}
 			?>
 		</p>
 	</container>

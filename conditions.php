@@ -11,4 +11,7 @@
 
 	// EXO 12
 	$magnitude = 6;
+
+	// EXO 13
+	$maVariable="Homme";
 ?>
