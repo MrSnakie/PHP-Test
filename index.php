@@ -268,6 +268,10 @@
 				echo "</br>";
 			?>
 		</p>
+
+		<p>
+			<a href="parametres.php">Paramètres PHP</a>
+		</p>
 	</container>
 </body>
 </html>
