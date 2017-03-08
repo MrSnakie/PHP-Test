@@ -254,6 +254,12 @@
 					echo $key." ";
 				}
 				echo "</br>";
+
+				// EXO 38
+				foreach($haut_de_france as $key){
+					echo $key." ";
+				}
+				echo "</br>";
 			?>
 		</p>
 	</container>
