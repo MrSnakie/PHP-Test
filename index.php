@@ -150,6 +150,13 @@
 				$v1--;
 			}
 			echo "</br>";
+
+			// EXO 17
+			while($VARIABLE <= 10){
+				echo $VARIABLE." ";
+				$VARIABLE+=0.5;
+			}
+			echo "</br>";
 		?>
 		</p>
 	</container>
