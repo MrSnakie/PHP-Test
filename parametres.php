@@ -9,10 +9,15 @@
 <body>
 	<container>
 		<p><a href="parametres/exo1.php?nom=Nemare&prenom=Jean">Exercice 1</a></p>
-		</br>
+
 		<p>
 			<a href="parametres/exo2.php?nom=Nemare&prenom=Jean">Exercice 2</a>
-			<a href="parametres/exo2.php?nom=Nemare&prenom=Jean&age=50">Exercice 2 w/ Age</a>
+			<a href="parametres/exo2.php?nom=Nemare&prenom=Jean&age=50">Exercice 2 - Work</a>
+		</p>
+
+		<p>
+			<a href="parametres/exo3.php?dateDebut=17/03/2016">Exercice 3</a>
+			<a href="parametres/exo3.php?dateDebut=2/05/2016&dateFin=27/11/2016">Exercice 3 - Work</a>
 		</p>
 	</container>
 </body>

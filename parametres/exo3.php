@@ -10,7 +10,11 @@
 	<container>
 		<p>
 			<?php
-				echo $_GET['nom'] ." ". $_GET['prenom'];
+				if (isset($_GET['dateDebut'], $_GET['dateFin'])) {
+					echo $_GET['dateDebut'] ." ". $_GET['dateFin'];
+				}else{
+					echo "Il manque au moins un paramètre.";
+				}
 			?>
 		</p>
 	</container>
