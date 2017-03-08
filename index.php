@@ -260,6 +260,12 @@
 					echo $key." ";
 				}
 				echo "</br>";
+
+				// EXO 39
+				foreach ($haut_de_france as $key => $value) {
+					echo "Le département ". $value ." a le numéro ". $key .". ";
+				}
+				echo "</br>";
 			?>
 		</p>
 	</container>
