@@ -16,6 +16,17 @@
 				<input type="submit" value="Envoyer">
 			</form>
 		</p>
+
+		<hr>
+
+		<p>
+			<h1>Formulaire n°2</h1>
+			<form action="include/user.php" method="POST">
+				Prénom: <input type="text" name="nom">
+				Nom: <input type="text" name="prenom">
+				<input type="submit" value="Envoyer">
+			</form>
+		</p>
 	</container>
 </body>
 </html>
