@@ -19,6 +19,11 @@
 			<a href="parametres/exo3.php?dateDebut=17/03/2016">Exercice 3</a>
 			<a href="parametres/exo3.php?dateDebut=2/05/2016&dateFin=27/11/2016">Exercice 3 - Work</a>
 		</p>
+
+		<p>
+			<a href="parametres/exo4.php?langage=PHP">Exercice 4</a>
+			<a href="parametres/exo4.php?langage=PHP&serveur=LAMP">Exercice 4 - Work</a>
+		</p>
 	</container>
 </body>
 </html>
