@@ -135,6 +135,14 @@
 				echo $While." ";
 				$While++;
 			}
+			echo "</br>";
+
+			// EXO 15
+			while(20 > $var1){
+				echo ($var1*$var2)." ";
+				$var1++;
+			}
+			echo "</br>";
 		?>
 		</p>
 	</container>
