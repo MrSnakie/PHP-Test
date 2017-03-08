@@ -22,4 +22,7 @@
 
 	// EXO 35
 		// voir index.php
+
+	// EXO 36
+	$haut_de_france[51] = "Marne";
 ?>

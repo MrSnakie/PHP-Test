@@ -245,6 +245,9 @@
 
 				// EXO 35
 				echo $haut_de_france[59]."</br>";
+
+				// EXO 36
+				echo $haut_de_france[51]."</br>";
 			?>
 		</p>
 	</container>
