@@ -53,6 +53,14 @@
 		?>
 
 		<hr>
+
+		<h2>Exercice 7</h2>
+		<?php
+			echo "<p>" .date('d m Y', strtotime("+20 day")). "</p>";
+		?>
+
+		<hr>
+
 		<p><a href='index.php'>Retour</a></p>
 	</container>
 </body>
