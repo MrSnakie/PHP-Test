@@ -33,12 +33,17 @@
 		<p>
 			<h1>Formulaire n°3</h1>
 			<?php
-				if(isset($_GET['civilite'], $_GET['nom'], $_GET['prenom'], $_GET['fichier'])){
-					echo "<p>".htmlspecialchars($_GET['civilite'] ." ". $_GET['nom'] ." ". $_GET['prenom'] ." ". $_GET['fichier'])."</p>";
-					echo "<p><a href='formulaire.php'>Recommencer</a></p>";
+				if(isset($_POST['civilite'], $_POST['nom'], $_POST['prenom'])){
+					$verif = new SplFileInfo($_POST["fichier"]);
+					if( $verif->getExtension() == "pdf"){
+						echo "<p>".htmlspecialchars($_POST['civilite'] ." ". $_POST['nom'] ." ". $_POST['prenom'] ." ". $_POST['fichier'])."</p>";
+						echo "<p><a href='formulaire.php'>Recommencer</a></p>";
+					}else{
+						echo "<p>Veuillez insérer un fichier .PDF uniquement.</p>";
+					}
 				}else{
 			?>
-					<form action="formulaire.php" method="GET">
+					<form action="formulaire.php" method="POST">
 						Civilité: <select name="civilite" required>
 							<option value="Monsieur">Mr</option>
 							<option value="Madame">Mme</option>
