@@ -33,8 +33,8 @@
 		<p>
 			<h1>Formulaire n°3</h1>
 			<?php
-				if(isset($_GET['civilite'], $_GET['nom'], $_GET['prenom'])){
-					echo "<p>".htmlspecialchars($_GET['civilite'] ." ". $_GET['nom'] ." ". $_GET['prenom'])."</p>";
+				if(isset($_GET['civilite'], $_GET['nom'], $_GET['prenom'], $_GET['fichier'])){
+					echo "<p>".htmlspecialchars($_GET['civilite'] ." ". $_GET['nom'] ." ". $_GET['prenom'] ." ". $_GET['fichier'])."</p>";
 					echo "<p><a href='formulaire.php'>Recommencer</a></p>";
 				}else{
 			?>
@@ -45,7 +45,8 @@
 						</select>
 						Nom: <input type="text" name="nom" required>
 						Prénom: <input type="text" name="prenom" required>
-						<input type="submit" value="Envoyer">
+						<p>Pièce jointe: <input type="file" name="fichier" size="500" required></p>
+						<p><input type="submit" value="Envoyer"></p>
 					</form>
 			<?php
 				}
