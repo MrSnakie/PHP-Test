@@ -272,6 +272,7 @@
 		<p><a href="parametres.php">Paramètres PHP</a></p>
 		<p><a href="formulaire.php">Formulaire PHP</a></p>
 		<p><a href="super_global.php">Super Global PHP</a></p>
+		<p><a href="date.php">Date PHP</a></p>
 	</container>
 </body>
 </html>
