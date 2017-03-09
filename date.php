@@ -28,6 +28,14 @@
 		?>
 
 		<hr>
+
+		<h2>Exercice 4</h2>
+		<?php
+			echo "<p>Timestamp du jour: " .time(). ".</p>";
+			echo "<p>Timestamp du mardi 2 mars 2016 à 15h34 et 12s: " .mktime(15, 34, 12, 03, 2, 2016). ".</p>";
+		?>
+
+		<hr>
 		<p><a href='index.php'>Retour</a></p>
 	</container>
 </body>
