@@ -25,6 +25,20 @@
 			
 			echo "<p><a href='include/super_global2.php'>Sessions PHP</a></p>";
 		?>
+
+		<hr>
+
+		<h2>Exercice 3</h2>
+		<form action="super_global.php" method="POST">
+				<p>Login: <input type="text" name="login" required></p>
+				<p>Mot de passe: <input type="password" name="mdp" required></p>
+				<p><input type="submit" value="Envoyer"></p>
+		</form>
+		<?php
+			if(isset($_POST['login'], $_POST['mdp'])){
+				setcookie('connexion', $_POST['login'] & $_POST['mdp'], time()+3600);
+			}
+		?>
 	</container>
 </body>
 </html>
