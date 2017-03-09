@@ -36,6 +36,16 @@
 		?>
 
 		<hr>
+
+		<h2>Exercice 5</h2>
+		<?php
+			$aujourdhui = new DateTime(date('d-m-Y'));
+			$jour_cible = new DateTime('2016-05-16');
+			$interval = date_diff($aujourdhui, $jour_cible);
+			echo "<p>Il y a  " .$interval->format('%a'). " jours entre le 16 mai 2016 et aujourd'hui.</p>";
+		?>
+
+		<hr>
 		<p><a href='index.php'>Retour</a></p>
 	</container>
 </body>
