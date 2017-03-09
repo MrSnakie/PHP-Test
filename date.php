@@ -9,9 +9,16 @@
 <body>
 	<container>
 		<h2>Exercice 1</h2>
-		<p><?php
-			echo "Nous sommes le " .date('d/m/Y'). ".";
-		?></p>
+		<?php
+			echo "<p>Nous sommes le " .date('d/m/Y'). ".</p>";
+		?>
+
+		<hr>
+
+		<h2>Exercice 2</h2>
+		<?php
+			echo "<p>Nous sommes le " .date('d-m-Y'). ".</p>";
+		?>
 
 		<hr>
 		<p><a href='index.php'>Retour</a></p>
