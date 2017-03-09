@@ -21,6 +21,13 @@
 		?>
 
 		<hr>
+
+		<h2>Exercice 3</h2>
+		<?php
+			echo "<p>Nous sommes le " .strftime('%A %d %B %Y'). ".</p>";
+		?>
+
+		<hr>
 		<p><a href='index.php'>Retour</a></p>
 	</container>
 </body>
