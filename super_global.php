@@ -23,7 +23,7 @@
 			$_SESSION['prenom'] = "Bob";
 			$_SESSION['age'] = "10 ans";
 			
-			echo "<p><a href='include/super_global2.php'>Sessions PHP</a></p>";
+			echo "<p><a href='include/super_global2.php'>Afficher sessions PHP</a></p>";
 		?>
 
 		<hr>
@@ -36,9 +36,15 @@
 		</form>
 		<?php
 			if(isset($_POST['login'], $_POST['mdp'])){
-				setcookie('connexion', $_POST['login'] & $_POST['mdp'], time()+3600);
+				setcookie('login', $_POST['login'], time()+360);
+				setcookie('password', $_POST['mdp'], time()+360);
 			}
 		?>
+
+		<hr>
+
+		<h2>Exerice 4</h2>
+		<p><a href='include/super_global3.php'>Afficher cookies PHP</a></p>
 	</container>
 </body>
 </html>
