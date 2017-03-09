@@ -46,6 +46,13 @@
 		?>
 
 		<hr>
+
+		<h2>Exercice 6</h2>
+		<?php
+			echo "<p>Il y a  " .cal_days_in_month(CAL_GREGORIAN, 2, 2016). " jours dans le mois de février 2016.</p>";
+		?>
+
+		<hr>
 		<p><a href='index.php'>Retour</a></p>
 	</container>
 </body>
