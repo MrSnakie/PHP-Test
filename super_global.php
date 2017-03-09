@@ -45,6 +45,11 @@
 
 		<h2>Exerice 4</h2>
 		<p><a href='include/super_global3.php'>Afficher cookies PHP</a></p>
+
+		<hr>
+
+		<h2>Exerice 5</h2>
+		<p><a href='include/super_global4.php'>Modifier cookies PHP</a></p>
 	</container>
 </body>
 </html>
