@@ -10,3 +10,23 @@ container {
     border-radius: 5px;
     text-decoration: none;
     color: lime; }
+  container table {
+    background: #DDE9FB;
+    border: 1px solid #999999;
+    padding: 10px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #555555; }
+    container table tr:nth-child(1) {
+      font-weight: bold;
+      color: #656B74; }
+    container table tr:nth-child(2) {
+      font-weight: bold; }
+    container table td {
+      background: #E6ECF5;
+      border: 1px solid #DDDDDD;
+      padding: 5px;
+      width: 20px;
+      height: 10px;
+      text-align: center; }
+      container table td .numjour {
+        font-weight: 100; }

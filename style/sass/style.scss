@@ -14,4 +14,29 @@ container{
 		text-decoration: none;
 		color: lime;
 	}
+	table{
+		background: #DDE9FB;
+		border: 1px solid #999999;
+		padding: 10px;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		color: #555555;
+		tr:nth-child(1){
+			font-weight: bold;
+			color: #656B74;
+		}
+		tr:nth-child(2){
+			font-weight: bold;
+		}
+		td{
+			background: #E6ECF5;
+			border: 1px solid #DDDDDD;
+			padding: 5px;
+			width: 20px;
+			height: 10px;
+			text-align: center;
+			.numjour{
+				font-weight: 100;
+			}
+		}
+	}
 }
