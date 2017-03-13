@@ -273,6 +273,7 @@
 		<p><a href="formulaire.php">Formulaire PHP</a></p>
 		<p><a href="super_global.php">Super Global PHP</a></p>
 		<p><a href="date.php">Date PHP</a></p>
+		<p><a href="class.php">Class/Objets PHP</a></p>
 	</container>
 </body>
 </html>
