@@ -246,8 +246,8 @@
 				<strong>Nom du client:</strong> <?= $value->lastName ?> —
 				<strong>Prénom du client:</strong> <?= $value->firstName ?> —
 				<strong>Date de naissance:</strong> <?= $value->birthDate ?> —
-				<strong>Carte de fidélité:</strong> <?php if($value->card == 1){echo 'Oui';}else{echo 'Non';}; ?> —
-				<strong>Numéro de carte:</strong> <?php if($value->cardNumber == NULL){echo 'Aucun';}else{print($value->cardNumber);}; ?>
+				<strong>Carte de fidélité:</strong> <?php if($value->card == 1){echo 'Oui';}else{echo 'Non';}; ?>
+				<?php if($value->cardNumber !== NULL){echo '— <strong>Numéro de carte:</strong>' .$value->cardNumber;} ?>
 			</p>
 		<?php endforeach; ?>
 
