@@ -5,7 +5,10 @@
 	=            Affichage des clients            =
 	=============================================*/
 
-	$select_clients = 'SELECT * FROM clients';
+	$select_clients = 'SELECT *
+			FROM clients
+			WHERE card = 1
+		';
 
 	if(isset($_GET['sort'])){
 		if ($_GET['sort'] == 'ID') {
@@ -169,6 +172,19 @@
 
 		<h2>Exercice n°3</h2>
 		<p>Voir le 1er tableau.</p>
+		<p>On affiche que 20 clients.</p>
+
+		<!--==================================-->
+
+		<hr>
+
+		<!--=====================================
+		=               EXERCICE 4              =
+		======================================-->
+
+		<h2>Exercice n°3</h2>
+		<p>Voir le 1er tableau.</p>
+		<p>On affiche que les clients qui ont une carte.</p>
 
 		<!--==================================-->
 
