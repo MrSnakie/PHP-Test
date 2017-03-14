@@ -56,6 +56,16 @@
 			FROM shows
 		");
 	$annonce_spectacles = $traitement_spectacles->fetchAll();
+
+	/*=============================================
+	=           Phrase annonce clients            =
+	=============================================*/
+
+	$traitement_clients = $pdo->query("
+			SELECT *
+			FROM clients
+		");
+	$annonce_clients = $traitement_clients->fetchAll();
 	
 ?>
 
@@ -221,6 +231,25 @@
 				echo "<p>". $value->title ." par ". $value->performer .", le ". $value->date ." à ". $value->startTime .".</p>";
 			}
 		?>
+
+		<!--==================================-->
+
+		<hr>
+
+		<!--=====================================
+		=               EXERCICE 7              =
+		======================================-->
+
+		<h2>Exercice n°7</h2>
+		<?php foreach ($annonce_clients as $value) : ?>
+			<p>
+				<strong>Nom du client:</strong> <?= $value->lastName ?> —
+				<strong>Prénom du client:</strong> <?= $value->firstName ?> —
+				<strong>Date de naissance:</strong> <?= $value->birthDate ?> —
+				<strong>Carte de fidélité:</strong> <?php if($value->card == 1){echo 'Oui';}else{echo 'Non';}; ?> —
+				<strong>Numéro de carte:</strong> <?php if($value->cardNumber == NULL){echo 'Aucun';}else{print($value->cardNumber);}; ?>
+			</p>
+		<?php endforeach; ?>
 
 		<!--==================================-->
 
