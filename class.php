@@ -109,44 +109,32 @@
 				</tr>
 			</thead>
 			<tbody>
-				<?php
-					/* Afficher tous les clients */
-					foreach  ($clients as $value) {
-						echo '<tr>';
-							echo '<td>';
-								print_r($value->id); // ID
-							echo '</td>';
-
-							echo '<td>';
-								print_r($value->lastName); // Nom
-							echo '</td>';
-
-							echo '<td>';
-								print_r($value->firstName); // Prénom
-							echo '</td>';
-
-							echo '<td style="width: 150px">';
-								print_r($value->birthDate); // Date de naissance
-							echo '</td>';
-
-							echo '<td>';
-								if($value->card == 1){ // Carte
+				<?php foreach($clients as $value) : ?>
+					<tr>
+						<td><?= $value->id ?></td> <!-- ID du client -->
+						<td><?= $value->lastName ?></td> <!-- Nom du client -->
+						<td><?= $value->firstName ?></td> <!-- Prénom du client -->
+						<td style="width: 150px"><?= $value->birthDate ?></td> <!-- Date de naissance -->
+						<td>
+							<?php
+								if($value->card == 1){ // Carte de fidélité (Oui / Non)
 									echo 'Oui';
 								}else{
 									echo 'Non';
 								};
-							echo '</td>';
-
-							echo '<td style="width: 150px">';
+							?>
+						</td>
+						<td style="width: 150px">
+							<?php
 								if($value->cardNumber == NULL){ // Numéro de carte
 									echo 'Aucun';
 								}else{
 									print_r($value->cardNumber);
 								};
-							echo '</td>';
-						echo '</tr>';
-					}
-				?>
+							?>
+						</td>
+					</tr>
+				<?php endforeach ?>
 			</tbody>
 		</table>
 
