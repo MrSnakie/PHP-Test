@@ -1,6 +1,29 @@
 <?php
 	require_once 'include/config.php';
-	$traitement_clients = $pdo->query('SELECT * FROM clients ORDER BY lastName');
+	$select_clients = 'SELECT * FROM clients';
+
+	if(isset($_GET['sort'])){
+		if ($_GET['sort'] == 'ID') {
+			$select_clients .= " ORDER BY id";
+		}
+		elseif ($_GET['sort'] == 'Nom') {
+			$select_clients .= " ORDER BY lastName";
+		}
+		elseif ($_GET['sort'] == 'Prenom') {
+			$select_clients .= " ORDER BY firstName";
+		}
+		elseif ($_GET['sort'] == 'DateNaissance') {
+			$select_clients .= " ORDER BY lastName";
+		}
+		elseif ($_GET['sort'] == 'Carte') {
+			$select_clients .= " ORDER BY card";
+		}
+		elseif ($_GET['sort'] == 'NumeroCarte') {
+			$select_clients .= " ORDER BY cardNumber";
+		}
+	};
+
+	$traitement_clients = $pdo->query($select_clients);
 	$clients = $traitement_clients->fetchAll();
 ?>
 
@@ -18,12 +41,12 @@
 		<table align="center">
 			<thead>
 				<tr>
-					<th>ID</th>
-					<th>Nom</th>
-					<th>Prénom</th>
-					<th>Date de naissance</th>
-					<th>Carte</th>
-					<th>Numéro de carte</th>
+					<th><a href="class.php?sort=ID">ID</a></th>
+					<th><a href="class.php?sort=Nom">Nom</a></th>
+					<th><a href="class.php?sort=Prenom">Prénom</a></th>
+					<th><a href="class.php?sort=DateNaissance">Date de naissance</a></th>
+					<th><a href="class.php?sort=Carte">Carte</a></th>
+					<th><a href="class.php?sort=NumeroCarte">Numéro de carte</a></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -55,7 +78,7 @@
 								};
 							echo '</td>';
 
-							echo '<td>';
+							echo '<td style="width: 150px">';
 								if($value->cardNumber == NULL){ // Numéro de carte
 									echo 'Aucun';
 								}else{
