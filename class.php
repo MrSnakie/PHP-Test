@@ -7,7 +7,8 @@
 
 	$select_clients = 'SELECT *
 			FROM clients
-			WHERE card = 1
+			WHERE card = 1 # Afficher seulement les utilisateurs qui ont une carte
+			LIMIT 20 # Limiter affichage à 20 clients
 		';
 
 	if(isset($_GET['sort'])){
