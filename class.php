@@ -1,5 +1,5 @@
 <?php
-	require_once 'include/exec.php';
+	require_once 'include/config.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,9 +12,9 @@
 
 <body>
 	<container>
-		<h2>Class PHP</h2>
+		<h2>Exercice n°1</h2>
 		<?php
-			// code ...
+			// Afficher tous les clients
 		?>
 
 		<hr>
