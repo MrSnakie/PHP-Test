@@ -37,15 +37,25 @@
 	=         Affichage des spectacles            =
 	=============================================*/
 
-	$traitement_spectacles = $pdo->query('
+	$traitement_spectacles = $pdo->query("
 			SELECT showTypes.type, genres.genre
 				AS firstGenre, secGenres.genre
 				AS secondGenre
 			FROM showTypes, genres, genres AS secGenres
 			WHERE showTypes.id = genres.showTypesId AND showTypes.id = secGenres.showTypesId
 			ORDER BY genres.id
-		');
+		");
 	$spectacles = $traitement_spectacles->fetchAll();
+
+	/*=============================================
+	=         Phrase annonce spectacles           =
+	=============================================*/
+
+	$traitement_spectacles = $pdo->query("
+			SELECT *
+			FROM shows
+		");
+	$annonce_spectacles = $traitement_spectacles->fetchAll();
 	
 ?>
 
@@ -196,6 +206,21 @@
 		<h2>Exercice n°5</h2>
 		<p>Voir le 1er tableau.</p>
 		<p>On affiche que les clients ou le nom commencent par "M".</p>
+
+		<!--==================================-->
+
+		<hr>
+
+		<!--=====================================
+		=               EXERCICE 6              =
+		======================================-->
+
+		<h2>Exercice n°6</h2>
+		<?php
+			foreach ($annonce_spectacles as $value) {
+				echo "<p>". $value->title ." par ". $value->performer .", le ". $value->date ." à ". $value->startTime .".</p>";
+			}
+		?>
 
 		<!--==================================-->
 
