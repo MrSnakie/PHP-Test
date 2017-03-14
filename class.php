@@ -56,8 +56,14 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 	<script type="text/javascript">
 		function showHide() {
-			var ctn = document.getElementById('exo2');
-			ctn.display = ctn.display == 'none' ? 'block' : 'none';
+			if(document.getElementById('exo2')) {
+				exo2 = document.getElementById('exo2');
+				if(exo2.style.display == "none") {
+	  				exo2.style.display = "block";
+				}else{
+	  				exo2.style.display = "none";
+				}
+			}
 		}
 	</script>
 </head>
@@ -132,7 +138,7 @@
 
 		<h2>Exercice n°2</h2>
 		<p onclick="showHide()">Afficher contenu</p>
-		<div id="exo2">
+		<div style="display:none" id="exo2">
 			<table align="center">
 				<thead>
 					<tr>
@@ -152,6 +158,17 @@
 				</tbody>
 			</table>
 		</div>
+
+		<!--==================================-->
+
+		<hr>
+
+		<!--=====================================
+		=               EXERCICE 3              =
+		======================================-->
+
+		<h2>Exercice n°3</h2>
+		<p>Voir le 1er tableau.</p>
 
 		<!--==================================-->
 
