@@ -5,31 +5,29 @@
 	=            Affichage des clients            =
 	=============================================*/
 
-	$select_clients = 'SELECT *
+	$select_clients = "SELECT *
 			FROM clients
-			WHERE card = 1 # Afficher seulement les utilisateurs qui ont une carte
-			LIMIT 20 # Limiter affichage à 20 clients
-		';
+			# LIMIT 20 # EXO 3 - Limiter affichage à 20 clients
+			# WHERE card = 1 # EXO 4 - Afficher seulement les utilisateurs qui ont une carte
+			WHERE lastName LIKE 'M%' # EXO 5 - Afficher nom clients qui commencent par M
+		";
 
 	if(isset($_GET['sort'])){
 		if ($_GET['sort'] == 'ID') {
 			$select_clients .= " ORDER BY id";
-		}
-		elseif ($_GET['sort'] == 'Nom') {
+		}elseif ($_GET['sort'] == 'Nom') {
 			$select_clients .= " ORDER BY lastName";
-		}
-		elseif ($_GET['sort'] == 'Prenom') {
+		}elseif ($_GET['sort'] == 'Prenom') {
 			$select_clients .= " ORDER BY firstName";
-		}
-		elseif ($_GET['sort'] == 'DateNaissance') {
+		}elseif ($_GET['sort'] == 'DateNaissance') {
 			$select_clients .= " ORDER BY birthDate";
-		}
-		elseif ($_GET['sort'] == 'Carte') {
+		}elseif ($_GET['sort'] == 'Carte') {
 			$select_clients .= " ORDER BY card";
-		}
-		elseif ($_GET['sort'] == 'NumeroCarte') {
+		}elseif ($_GET['sort'] == 'NumeroCarte') {
 			$select_clients .= " ORDER BY cardNumber";
 		}
+	}else{
+		$select_clients .= " ORDER BY lastName";
 	};
 
 	$traitement_clients = $pdo->query($select_clients);
@@ -183,9 +181,21 @@
 		=               EXERCICE 4              =
 		======================================-->
 
-		<h2>Exercice n°3</h2>
+		<h2>Exercice n°4</h2>
 		<p>Voir le 1er tableau.</p>
 		<p>On affiche que les clients qui ont une carte.</p>
+
+		<!--==================================-->
+
+		<hr>
+
+		<!--=====================================
+		=               EXERCICE 5              =
+		======================================-->
+
+		<h2>Exercice n°5</h2>
+		<p>Voir le 1er tableau.</p>
+		<p>On affiche que les clients ou le nom commencent par "M".</p>
 
 		<!--==================================-->
 
