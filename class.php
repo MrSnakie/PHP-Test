@@ -54,6 +54,7 @@
 	$traitement_spectacles = $pdo->query("
 			SELECT *
 			FROM shows
+			ORDER BY title
 		");
 	$annonce_spectacles = $traitement_spectacles->fetchAll();
 
@@ -77,14 +78,20 @@
 	<link rel="stylesheet" type="text/css" href="style/css/style.css">
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 	<script type="text/javascript">
-		function showHide() {
-			if(document.getElementById('exo2')) {
-				exo2 = document.getElementById('exo2');
-				if(exo2.style.display == "none") {
-	  				exo2.style.display = "block";
-				}else{
-	  				exo2.style.display = "none";
-				}
+		function showHideExo2() {
+			exo = document.getElementById('exo2');
+			if(exo.style.display == "none") {
+				exo.style.display = "block";
+			}else{
+				exo.style.display = "none";
+			}
+		}
+		function showHideExo7() {
+			exo = document.getElementById('exo7');
+			if(exo.style.display == "none") {
+				exo.style.display = "block";
+			}else{
+				exo.style.display = "none";
 			}
 		}
 	</script>
@@ -147,7 +154,7 @@
 		======================================-->
 
 		<h2>Exercice n°2</h2>
-		<p onclick="showHide()">Afficher contenu</p>
+		<p style="cursor: pointer; color: lime;" onclick="showHideExo2()">Afficher contenu</p>
 		<div style="display:none" id="exo2">
 			<table align="center">
 				<thead>
@@ -229,15 +236,18 @@
 		======================================-->
 
 		<h2>Exercice n°7</h2>
-		<?php foreach ($annonce_clients as $value) : ?>
-			<p>
-				<strong>Nom du client:</strong> <?= $value->lastName ?> —
-				<strong>Prénom du client:</strong> <?= $value->firstName ?> —
-				<strong>Date de naissance:</strong> <?= $value->birthDate ?> —
-				<strong>Carte de fidélité:</strong> <?php if($value->card == 1){echo 'Oui';}else{echo 'Non';}; ?>
-				<?php if($value->cardNumber !== NULL){echo '— <strong>Numéro de carte:</strong>' .$value->cardNumber;} ?>
-			</p>
-		<?php endforeach; ?>
+		<p style="cursor: pointer; color: lime;" onclick="showHideExo7()">Afficher contenu</p>
+		<div style="display:none" id="exo7">
+			<?php foreach ($annonce_clients as $value) : ?>
+				<p>
+					<strong>Nom du client:</strong> <?= $value->lastName ?> —
+					<strong>Prénom du client:</strong> <?= $value->firstName ?> —
+					<strong>Date de naissance:</strong> <?= $value->birthDate ?> —
+					<strong>Carte de fidélité:</strong> <?php if($value->card == 1){echo 'Oui';}else{echo 'Non';}; ?>
+					<?php if($value->cardNumber !== NULL){echo '— <strong>Numéro de carte:</strong>' .$value->cardNumber;} ?>
+				</p>
+			<?php endforeach; ?>
+		</div>
 
 		<!--==================================-->
 
