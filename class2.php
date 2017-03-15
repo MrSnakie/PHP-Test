@@ -40,6 +40,15 @@
 			FROM cardTypes
 		");
 	$add_clients_card = $traitement_clients->fetchAll();
+
+	/**
+	
+		TODO:
+		- Traitement PHP -> SQL
+		- Refacto mon code tout naze
+	
+	 */
+	
 ?>
 
 <!DOCTYPE html>
