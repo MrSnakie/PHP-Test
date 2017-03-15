@@ -30,6 +30,16 @@
 			echo "<h1 align='center' style='color:#FF4F4F'>Le client a été ajouté.</h1>";
 		}
 	}
+
+	/*=============================================
+	=    Ajouter client avec carte de fidélité    =
+	=============================================*/
+
+	$traitement_clients = $pdo->query("
+			SELECT *
+			FROM cardTypes
+		");
+	$add_clients_card = $traitement_clients->fetchAll();
 ?>
 
 <!DOCTYPE html>
@@ -68,6 +78,59 @@
 				<input onclick="Hide()" type="radio" value="0" id="Non" name="carte" /> Non
 			</p>
 			<p id="showornot"><label for="numero_carte">Numéro de la carte:</label> <input type="text" name="numero_carte" maxlength="4" required /></p>
+			<p><button type="submit">Ajouter</button></p>
+		</form>
+
+		<!--==================================-->
+
+		<hr>
+
+		<!--=====================================
+		=               EXERCICE 2              =
+		=                   -                   =
+		=      Créer client avec une carte      =
+		=      (numéro et type à attribuer)     =
+		======================================-->
+
+		<h2>Exercice n°2</h2>
+		<form action="class2.php" method="post" accept-charset="utf-8">
+			<p>
+				<label for="nom2">Nom:</label>
+				<input type="text" name="nom2" maxlength="50" required />
+			</p>
+
+			<p>
+				<label for="prenom2">Prénom:</label>
+				<input type="text" name="prenom2" maxlength="50" required />
+			</p>
+
+			<p>
+				<label for="date_naissance2">Date de naissance:</label>
+				<input type="date" name="date_naissance2" required />
+			</p>
+
+			<p>
+				<label for="carte2">Cocher la case pour ajouter une carte de fidélité:</label>
+				<input type="checkbox" name="carte2" checked required />
+			</p>
+
+			<p id="autohide">
+				<label for="numero_carte2">Numéro de carte:</label>
+				<input type="number" name="numero_carte2" />
+			</p>
+
+			<p id="autohide">
+				<label for="type_carte">Type de carte:</label>
+				<select name="type_carte">
+					<option>Selectionner un type de carte</option>}
+					<?php
+						foreach($add_clients_card as $value){
+							echo '<option value="'.$value->id.'">'.$value->type.'</option>';
+						}
+					?>
+				</select>
+			</p>
+
 			<p><button type="submit">Ajouter</button></p>
 		</form>
 
