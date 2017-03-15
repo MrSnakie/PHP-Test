@@ -91,6 +91,7 @@
 					startTime = ?
 			");
 			$ajout_showTypes->execute([$_POST['titre'], $_POST['artiste'], $_POST['type_spectacles'], $_POST['genre1'], $_POST['genre2'], $_POST['date_spectacle'], $_POST['duree'], $_POST['heure']]);
+			header('refresh: 5; url=class2.php');
 			echo "<h1 align='center' style='color:#FF4F4F'>Le spectacle a été ajouté.</h1>";
 		}
 	};
