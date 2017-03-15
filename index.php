@@ -273,7 +273,8 @@
 		<p><a href="formulaire.php">Formulaire PHP</a></p>
 		<p><a href="super_global.php">Super Global PHP</a></p>
 		<p><a href="date.php">Date PHP</a></p>
-		<p><a href="class.php">PDO / BDD PHP</a></p>
+		<p><a href="class.php">Requête PDO / BDD PHP</a></p>
+		<p><a href="class2.php">Ajout PDO / BDD PHP</a></p>
 	</container>
 </body>
 </html>
