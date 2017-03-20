@@ -57,6 +57,9 @@
 				}
 			?>
 		</p>
+
+		<hr>
+		<p><a href='index.php'>Retour</a></p>
 	</container>
 </body>
 </html>
