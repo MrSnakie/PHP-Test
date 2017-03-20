@@ -34,6 +34,9 @@
 			<a href="parametres/exo6.php?salle=101">Exercice 6</a>
 			<a href="parametres/exo6.php?batiment=12&salle=101">Exercice 6 - Work</a>
 		</p>
+		
+		<hr>
+		<p><a href='index.php'>Retour</a></p>
 	</container>
 </body>
 </html>
